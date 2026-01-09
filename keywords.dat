@@ -1,0 +1,11 @@
+# 医学图像分割关键词配置
+# 格式: keyword1 AND keyword2 NOT excluded1 NOT excluded2
+
+# 医学图像分割 (排除半监督/自监督)
+segmentation AND medical NOT semi-supervised NOT self-supervised NOT semi-supervision NOT self-supervision
+
+# 息肉分割 (排除半监督/自监督)
+polyp AND segmentation NOT semi-supervised NOT self-supervised NOT semi-supervision NOT self-supervision
+
+# 结肠镜深度学习 (排除半监督/自监督)
+colonoscopy AND deep learning NOT semi-supervised NOT self-supervised NOT semi-supervision NOT self-supervision
